@@ -1,0 +1,24 @@
+void drawCard(Graphics g, Card card,int x, int y) {
+    if (card == null) {
+        // Описание Карты рубашкой Вверх.
+        g.setColor(Color.blue);
+        g.fillRect(x, y, 40, 60);
+        g.setColor(Color.white);
+        g.drawRect(x+3, y+3, 33, 53);
+        g,drawRect(x+4, y+4, 31, 51);
+    }
+    else{
+        int row = 0; // Определение Ряда, в котором нарисована текущая карта.
+        switch (card.getSuit()) {
+            case Card.CLUBS: row = 0; break;
+            case Card.HEARTS: row = 1; break;
+            case Card.SPADES: row = 2; break;
+            case Card.DIAMOND: row = 3; break;
+        }
+        int sx, sy; // Координаты Верхнего Левого Угла Карты
+                    // в заданном Рисунке.
+        sx = 40*(card.getValue() - 1);
+        sy = 60 * row;
+        g.drawImage(cardImages, x, y, x+40, y+60, sx, sy, sx+40, sy+60, this);
+    }
+}
