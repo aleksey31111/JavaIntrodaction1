@@ -34,7 +34,7 @@ public class ClassesAndObjects {
         System.out.println("Выводим значение в main методе:" + person3.getAge());
     }
 }
-//class test{
+//class test37{
 //
 //}
 //class test2{

@@ -1,0 +1,8 @@
+А после безуспешных попыток 9.01.2024, мн удалось 10.01.2024
+определить путь сначала до
+    I:\INTERNET-PRGRAMMING-Java\IdeaProjects1\lesson-1\
+    Lesson37Exceptions_Part1_ExeptionHandling\lesson37.txt
+Затем до I:\INTERNET-PRGRAMMING-Java\IdeaProjects1\lesson-1\
+         Lesson37Exceptions_Part1_ExeptionHandling\lesson37
+    Ошибка заключалась в том что File file = new File("path");, а надо было
+    File file = new File(path);
