@@ -1,7 +1,6 @@
-package Lesson45Serialization_Part1_WritingAnObjectToAnExternalFile;
+package Lesson46Serialization_Part2_SerializationOfArrays;
 
 import java.io.Serializable;
-
 public class Person implements Serializable {
     private int id;
     private String name;
@@ -20,7 +19,6 @@ public class Person implements Serializable {
     }
 
     public String toString() {
-
         return id + " : " + name;
     }
 }
